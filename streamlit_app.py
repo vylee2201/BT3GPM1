@@ -3,7 +3,7 @@ import pandas as pd
 
 st.title("📂 Upload File App")
 
-uploaded_file = st.file_uploader("Chọn một file CSV", type=["csv"])
+uploaded_file = st.file_uploader("Chọn một file", type=["csv", "py", "txt"])
 
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
